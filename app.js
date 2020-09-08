@@ -87,7 +87,7 @@ searchInputBox.addEventListener('keypress', (event) =>{
 
 //Get Weather Report
 function getWeatherReport(city) {
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=7811d37cd938d23fd56e03506924b779&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=7811d37cd938d23fd56e03506924b779&units=metric`)
     .then(weather => {
         return weather.json();
     }).then(showWeatherReport);
