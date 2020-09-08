@@ -95,7 +95,7 @@ function getWeatherReport(city) {
 
 // Show weather Report
 function showWeatherReport(weather){
-    console.log(weather);
+    //console.log(weather);
 
     city.innerText = `${weather.name}, ${weather.sys.country}`;
 
